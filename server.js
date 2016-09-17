@@ -16,6 +16,18 @@ Imported from USA`
     
     
 };
+var data1={
+    title:"My Secondt Product",
+    heading:"One Plus3",
+    date:"18th Sept. 2016",
+    body:`16MP primary camera (f/2.0 Aperture, 1.12 µm Pixels) with high speed autofocus technology (PDAF), Electronic (EIS) and Optical (OIS) stabilization technologies and 8MP front facing camera,Corning's Gorilla Glass 4
+13.97 centimeters (5.5-inch) Optic AMOLED capacitive touchscreen with full HD (401 ppi) 1920 x 1080 pixels resolution; ceramic-coated fingerprint Scanner (<0.2 seconds)
+OxygenOS based on Android Marshmallow 6.0.1 operating system with 2.2GHz + 1.6GHz Kryo Qualcomm Snapdragon 820 quad core processor, 14nm FinFET technology, Adreno 530 GPU, 6GB LPDDR4 RAM, 64GB internal memory (UFS 2.0 Flash Storage) and dual nano-SIM dual-standby (4G+4G) with NFC enabled and reversible type-C connector
+3,000 mAh lithium-polymer battery (non-removable) powered by state-of-the-art Dash Charge technology (replenish over 60% of the battery within 30 minutes)
+1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase`
+    
+    
+};
 var createTemp=function(dat){
     var title=dat.title;
     var heading=dat.heading;
@@ -57,7 +69,7 @@ app.get('/article-three',function(req,res){
    res.send(createTemp(data));
 });
 app.get('/article-two',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-two.html')); 
+   res.send(createTemp(data1));
 });
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
