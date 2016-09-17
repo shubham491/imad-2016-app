@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var da={
-'data':{
+'article-three':{
     title:"My First Product",
     heading:"Vaseline",
     date:"18th Sept. 2016",
