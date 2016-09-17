@@ -69,7 +69,7 @@ app.get('/article-one',function(req,res){
 });
 app.get('/:daname',function(req,res){
     var daname=req.param.daname;
-   res.send(createTemp(da[data]));
+   res.send(createTemp(da[daname]));
 });
 app.get('/article-two',function(req,res){
    res.send(createTemp(data1));
