@@ -17,7 +17,7 @@ Imported from USA`
     
     
 },
-'data1':{
+'article-two':{
     title:"My Secondt Product",
     heading:"One Plus3",
     date:"18th Sept. 2016",
@@ -71,9 +71,7 @@ app.get('/:daname',function(req,res){
     var daname=req.params.daname;
    res.send(createTemp(da[daname]));
 });
-app.get('/article-two',function(req,res){
-   res.send(createTemp(data1));
-});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
