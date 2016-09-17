@@ -68,7 +68,7 @@ app.get('/article-one',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 app.get('/:daname',function(req,res){
-    var daname=req.param.daname;
+    var daname=req.params.daname;
    res.send(createTemp(da[daname]));
 });
 app.get('/article-two',function(req,res){
