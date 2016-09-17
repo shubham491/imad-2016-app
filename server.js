@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var da={
-data:{
+'data':{
     title:"My First Product",
     heading:"Vaseline",
     date:"18th Sept. 2016",
@@ -17,7 +17,7 @@ Imported from USA`
     
     
 },
-data1:{
+'data1':{
     title:"My Secondt Product",
     heading:"One Plus3",
     date:"18th Sept. 2016",
@@ -67,7 +67,7 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/article-one',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
-app.get('/:article-three',function(req,res){
+app.get('/:daname',function(req,res){
     var daname=req.param.daname;
    res.send(createTemp(da[daname]));
 });
