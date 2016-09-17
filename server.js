@@ -41,6 +41,7 @@ var createTemp=function(dat){
 </body>
 
 </html>`;
+return htm;
 };
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
