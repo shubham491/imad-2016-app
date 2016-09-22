@@ -8,7 +8,7 @@ function moveRight(){
    marginleft+=10;
    imag.style.marginLeft=marginleft+"px"; 
 }
-}
+
 imag.onclick=function(){
     var interval=setInterval(moveRight,100);
    
