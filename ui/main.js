@@ -16,15 +16,28 @@ imag.onclick=function(){
 };
 //counter code
 var button=document.getElementById("counter");
-var counter=0;
+//var counter=0;
 button.onclick=function(){
-  //make a rquest to the counter endpoint
-  
+  //create a request
+  var request=new XMLHttpRequest();
   //capture the response and store it in a variable
-  
+  request.onreadystatechange=function(){
+    if(request.readyState===XMLHttpRequest.DONE)
+    {
+        if(request.status===200)
+        {
+            var counter=request.responseText;
+            var span=document.getElementById('coun');
+            span.innerHTML=counter.toString();
+        }
+    }
+  };
   //render the variable in the correct span
-  counter+=1;
+  /*counter+=1;
   var span=document.getElementById("coun");
-  span.innerHTML=counter.toString();
+  span.innerHTML=counter.toString();*/
+  //make a request
+  request.open('GET','http://shubham491.imad.hasura-app.io/counter');
+  request.send('null');
   
 };
