@@ -6,7 +6,7 @@ alert('Hi,I am javascript');
 var imag=document.getElementById("imge");
 var marginleft=0;
 function moveRight(){
-   marginleft+=4;
+   marginleft+=1;
    imag.style.marginLeft=marginleft+"px"; 
 }
 
