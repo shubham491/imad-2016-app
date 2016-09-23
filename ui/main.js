@@ -1,7 +1,8 @@
 console.log('Loaded!');
-alert('Hi,I am javascript');
 var blo=document.getElementById("main-blo");
 blo.innerHTML="Nice One";
+alert('Hi,I am javascript');
+
 var imag=document.getElementById("imge");
 var marginleft=0;
 function moveRight(){
