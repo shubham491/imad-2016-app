@@ -80,7 +80,7 @@ app.get('/ui/madi.png', function (req, res) {
 });var counte=0;
 app.get('/counter', function (req, res) {
  counte+=1;
-  res.send(counte);
+  res.send(counte.toString());
 });
 
 
