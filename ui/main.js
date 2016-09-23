@@ -41,3 +41,28 @@ button.onclick=function(){
   request.send('null');
   
 };
+//capture name and submit
+var name1=document.getElementById("name");
+var name=name1.value;
+var subm=document.getElementById("submit_btn");
+subm.onclick=function(){
+  //make a request to the server and send the name
+  //capture a list of names and render it as a list
+  var names=['name1','name2','name3','name4'];
+  var list='';
+  for(var i=0;i<names.length;i++)
+  {
+      list+="<li>"+names[i]+"</li>";
+      
+  }
+  var ul=document.getElementById("name_list");
+  ul.innerHTML=list;
+};
+
+
+
+
+
+
+
+
