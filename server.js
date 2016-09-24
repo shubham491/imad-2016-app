@@ -75,7 +75,7 @@ app.get('/article-one',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-   res.send(JSON.stringify(names));
+  // res.send(JSON.stringify(names));
 app.get('/:daname',function(req,res){
     var daname=req.params.daname;
    res.send(createTemp(da[daname]));
