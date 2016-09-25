@@ -38,7 +38,7 @@ button.onclick=function(){
   var span=document.getElementById("coun");
   span.innerHTML=counter.toString();
   //make a request
-  request.open('GET','http://shubham491.imad.hasura-app.io/counter');
+  request.open('GET','http://shubham491.imad.hasura-app.io/');
   request.send('null');
   
 };
