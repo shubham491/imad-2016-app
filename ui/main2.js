@@ -1,4 +1,4 @@
-
+alert("Hi");
 var comments=[];
 var subm=document.getElementById("submit_btn1");
 subm.onclick=function(){
