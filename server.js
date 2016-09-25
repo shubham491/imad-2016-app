@@ -80,7 +80,7 @@ app.get('/comm1_submit/',function(req,res){
    comments.push(name);
    //JSON:JavaScript Object Notation
    
-   res.send(JSON.stringify(commentss));
+   res.send(JSON.stringify(comments));
 });
 app.get('/name_submit/',function(req,res){
    var name=req.query.name;
