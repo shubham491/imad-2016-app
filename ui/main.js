@@ -29,16 +29,15 @@ button.onclick=function(){
             var counter=request.responseText;
             var span=document.getElementById('coun');
             span.innerHTML=counter.toString();
-           
         }
     }
-  
+  };
   //render the variable in the correct span
-  counter+=1;
+  /*counter+=1;
   var span=document.getElementById("coun");
-  span.innerHTML=counter.toString();
+  span.innerHTML=counter.toString();*/
   //make a request
-  request.open('GET','http://shubham491.imad.hasura-app.io/');
+  request.open('GET','http://shubham491.imad.hasura-app.io/counter');
   request.send('null');
   
 };
@@ -59,11 +58,5 @@ subm.onclick=function(){
   var ul=document.getElementById("name_list");
   ul.innerHTML=list;
 };
-
-
-
-
-
-
 
 
