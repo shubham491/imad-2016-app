@@ -101,7 +101,7 @@ subm.onclick=function(){
     }
 };
 var name1=document.getElementById("comm1");
-var name=comm1.value;
+var name=name1.value;
 request.open('GET','http://shubham491.imad.hasura-app.io/comm1_submit?name='+name);
   request.send('null');
 };
