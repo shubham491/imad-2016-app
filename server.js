@@ -65,6 +65,7 @@ app.get('/counter', function (req, res) {
  counter=counter+1;
   res.send(counter.toString());
 });var names=[];
+var comments=[];
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -74,7 +75,7 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/article-one',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
-var comments=[];
+
 app.get('/comm1_submit/',function(req,res){
    var name=req.query.name;
    comments.push(name);
