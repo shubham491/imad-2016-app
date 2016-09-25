@@ -95,7 +95,7 @@ subm.onclick=function(){
       list+="<li>"+comments[i]+"</li>";
       
   }
-  var ul=document.getElementById("name_list");
+  var ul=document.getElementById("comm_list");
   ul.innerHTML=list;
         }
     }
