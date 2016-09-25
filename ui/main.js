@@ -17,7 +17,10 @@ imag.onclick=function(){
 //counter code
 var button=document.getElementById("counter");
 //var counter=0;
-button.onclick=function(){
+var name1=document.getElementById("name");
+var name=name1.value;
+var subm=document.getElementById("submit_btn");
+subm.onclick=function(){
   //create a request
   var request=new XMLHttpRequest();
   //capture the response and store it in a variable
@@ -26,9 +29,19 @@ button.onclick=function(){
     {
         if(request.status===200)
         {
-            var counter=request.responseText;
+           /* var counter=request.responseText;
             var span=document.getElementById('coun');
-            span.innerHTML=counter.toString();
+            span.innerHTML=counter.toString();*/
+             var names=request.responseText;
+             names=JSON.parse(names);
+  var list='';
+  for(var i=0;i<names.length;i++)
+  {
+      list+="<li>"+names[i]+"</li>";
+      
+  }
+  var ul=document.getElementById("name_list");
+  ul.innerHTML=list;
         }
     }
   };
@@ -37,12 +50,12 @@ button.onclick=function(){
   var span=document.getElementById("coun");
   span.innerHTML=counter.toString();*/
   //make a request
-  request.open('GET','http://shubham491.imad.hasura-app.io/counter');
+  request.open('GET','http://shubham491.imad.hasura-app.io/name_submit/?name='+,true);
   request.send('null');
   
 };
 //capture name and submit
-var name1=document.getElementById("name");
+/*var name1=document.getElementById("name");
 var name=name1.value;
 var subm=document.getElementById("submit_btn");
 subm.onclick=function(){
@@ -57,7 +70,7 @@ subm.onclick=function(){
   }
   var ul=document.getElementById("name_list");
   ul.innerHTML=list;
-};
+};*/
 
 
 
