@@ -42,8 +42,8 @@ button.onclick=function(){
   
 };
 //capture name and submit
-var name1=document.getElementById("name");
-var name=name1.value;
+//var name1=document.getElementById("name");
+//var name=name1.value;
 var subm=document.getElementById("submit_btn");
 subm.onclick=function(){
   //make a request to the server and send the name
@@ -69,7 +69,9 @@ subm.onclick=function(){
         }
     }
 };
-request.open('GET','http://shubham491.imad.hasura-app.io/name_submit?name=');
+var name1=document.getElementById("name");
+var name=name1.value;
+request.open('GET','http://shubham491.imad.hasura-app.io/name_submit?name='+name);
   request.send('null');
 };
 
