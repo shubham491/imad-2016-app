@@ -73,6 +73,12 @@ app.get('/ui/main.js', function (req, res) {
 });
 app.get('/article-one',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+app.get('/name_submit/',function(req,res){
+   var name=req.query.name;
+   names.push(name);
+   //JSON:JavaScript Object Notation
+   
+   res.send(JSON.stringify(names));
 });
 var comments=[];
 app.get('/comm1_submit/',function(req,res){
@@ -82,13 +88,7 @@ app.get('/comm1_submit/',function(req,res){
    
    res.send(JSON.stringify(comments));
 });
-app.get('/name_submit/',function(req,res){
-   var name=req.query.name;
-   names.push(name);
-   //JSON:JavaScript Object Notation
-   
-   res.send(JSON.stringify(names));
-});
+
   // res.send(JSON.stringify(names));
 app.get('/:daname',function(req,res){
     var daname=req.params.daname;
