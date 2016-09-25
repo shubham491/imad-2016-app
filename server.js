@@ -81,6 +81,13 @@ app.get('/name_submit/',function(req,res){
    
    res.send(JSON.stringify(names));
 });
+app.get('/comm1_submit/',function(req,res){
+   var name=req.query.name;
+   comments.push(name);
+   //JSON:JavaScript Object Notation
+   
+   res.send(JSON.stringify(commentss));
+});
   // res.send(JSON.stringify(names));
 app.get('/:daname',function(req,res){
     var daname=req.params.daname;
