@@ -13,11 +13,11 @@ IMPORTS
 VARIABLES
 ==================  
 */
-$black: #000;
-$red: #c00;
-$purple: #551a8b;
+black: #000;
+red: #c00;
+purple: #551a8b;
 $off: #0ff;
-$darkoff: darken($off, 25);
+darkoff: darken($off, 25);
 $foofoo: #f00f00;
 $foffer: #f0ff32; 
 $gray: #dcdcdc;
@@ -39,32 +39,32 @@ ANIMATIONS
 ==================  
 */
 @-webkit-keyframes coloriffic {
-  0%,100% { color: $purple; }
-  20% { color: $red; }
-  40% { color: $off; }
-  60% { color: $foofoo; }
-  80% { color: $foffer; }
+  0%,100% { color: #551a8b; }
+  20% { color: #c00; }
+  40% { color: #0ff; }
+  60% { color: #f00f00; }
+  80% { color:#f0ff32; }
 }
 @-moz-keyframes coloriffic {
-  0%,100% { color: $purple; }
-  20% { color: $red; }
-  40% { color: $off; }
-  60% { color: $foofoo; }
-  80% { color: $foffer; }
+  0%,100% { color:#551a8b; }
+  20% { color: #c00; }
+  40% { color: #0ff; }
+  60% { color: #f00f00; }
+  80% { color: #f0ff32; }
 }
 @-o-keyframes coloriffic {
-  0%,100% { color: $purple; }
-  20% { color: $red; }
-  40% { color: $off; }
-  60% { color: $foofoo; }
-  80% { color: $foffer; }
+  0%,100% { color: #551a8b; }
+  20% { color: #c00; }
+  40% { color: #0ff; }
+  60% { color: #f00f00; }
+  80% { color:#f0ff32; }
 }
 @keyframes coloriffic {
-  0%,100% { color: $purple; }
-  20% { color: $red; }
-  40% { color: $off; }
-  60% { color: $foofoo; }
-  80% { color: $foffer; }
+  0%,100% { color:#551a8b; }
+  20% { color: #c00; }
+  40% { color: #0ff; }
+  60% { color: #f00f00; }
+  80% { color: #f0ff32; }
 }
 
 
@@ -155,7 +155,7 @@ article[role="profile"] h2{
   @include transition(all .5s);
   &:hover {
     letter-spacing: .25em;
-    color: $purple;  
+    color:#551a8b;  
   }  
 }
 
