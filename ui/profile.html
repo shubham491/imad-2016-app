@@ -20,15 +20,23 @@
          #c3
         {
          width:450px;
-        opacity: 0.5;
-    filter: alpha(opacity=50);
-         border-radius:10px;
+        
          
         }
-        #para
-        {
-            color:black;
-        }
+       #transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px ;
+    border-radius:10px;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#para {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
         #imag
         {
             background-image:url("http://netdna.webdesignerdepot.com/uploads/2013/06/featured48.jpg");
@@ -104,7 +112,11 @@ li a:hover {
                     
                 </td>
                 <td id="c3">
+                    
+  <div class="transbox">
                     <p id="para">Hey there i am student enrolled in Computer Science Engineering in Kalyani Government Engineering College.I am presently in my 3rd year of B-Tech.I am very much passionate about coding and have done courses on Core Java and Advanced Java.</p>
+                    </div>
+                    
                 </td>
                 </tr>
             </table>
