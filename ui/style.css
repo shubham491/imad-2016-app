@@ -18,9 +18,7 @@ body {
 
 .img-medium {
     height: 200px;
-    ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-filter: alpha(opacity=50);
-opacity: 0.5;
+   
 }
 .count
       {
