@@ -100,10 +100,10 @@ app.get('/name_submit/',function(req,res){
 
 
   // res.send(JSON.stringify(names));
-app.get('/:daname',function(req,res){
+/*app.get('/:daname',function(req,res){
     var daname=req.params.daname;
    res.send(createTemp(da[daname]));
-});
+});*/
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
