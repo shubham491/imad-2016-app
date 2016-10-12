@@ -57,9 +57,7 @@ var createTemp=function(dat){
 </html>`;
 return htm;
 };
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -76,7 +74,9 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/main2.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main2.js'));
 });
-
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 
 app.get('/article-one',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
@@ -102,10 +102,10 @@ app.get('/name_submit/',function(req,res){
 
 
   // res.send(JSON.stringify(names));
-/*app.get('/:daname',function(req,res){
+app.get('/:daname',function(req,res){
     var daname=req.params.daname;
    res.send(createTemp(da[daname]));
-});*/
+});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
