@@ -77,20 +77,20 @@ app.get('/ui/styl.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'styl.css'));
 });
 
-app.get('css/jquery.bxslider.css', function (req, res) {
+app.get('/ui/jquery.bxslider.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'jquery.bxslider.css'));
 });
-app.get('css/nav.css', function (req, res) {
+app.get('/ui/nav.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'nav.css'));
 });
-app.get('js/jquery-1.11.2.min.js', function (req, res) {
+app.get('/ui/jquery-1.11.2.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'jquery-1.11.2.min.js'));
 });
-app.get('js/jquery.bxslider.js', function (req, res) {
+app.get('/ui/jquery.bxslider.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'jquery.bxslider.min.js'));
 });
-app.get('js/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/ui/main4.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main4.js'));
 });
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
