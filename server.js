@@ -78,7 +78,7 @@ app.get('/ui/styl.css', function (req, res) {
 });
 
 app.get('css/jquery.bxslider.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'css/jquery.bxslider.css'));
+  res.sendFile(path.join(__dirname, 'css', 'jquery.bxslider.css'));
 });
 app.get('css/nav.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'nav.css'));
