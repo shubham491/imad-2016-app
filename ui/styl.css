@@ -138,7 +138,7 @@ img{
     clear:both;
 }
 .parallax-2{
-    background: url("https://pixabay.com/static/uploads/photo/2015/12/19/16/23/wood-1099960_960_720.jpg") repeat fixed;
+    background: url("/ui/wood-1099960_1920.jpg") repeat fixed;
     background-size:100% 800px;
     text-align:center;
 }
