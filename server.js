@@ -78,19 +78,19 @@ app.get('/ui/styl.css', function (req, res) {
 });
 
 app.get('css/jquery.bxslider.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'jquery.bxslider.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'jquery.bxslider.css'));
 });
 app.get('css/nav.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'nav.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'nav.css'));
 });
 app.get('js/jquery-1.11.2.min.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'jquery-1.11.2.min.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'jquery-1.11.2.min.js'));
 });
 app.get('js/jquery.bxslider.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'jquery.bxslider.min.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'jquery.bxslider.min.js'));
 });
 app.get('js/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'main.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
