@@ -77,6 +77,12 @@ app.get('styl.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'styl.css'));
 });
 
+app.get('css/jquery.bxslider.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/css', 'jquery.bxslider.css'));
+});
+app.get('css/nav.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/css', 'nav.css'));
+});
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
@@ -116,6 +122,9 @@ app.get('/:daname',function(req,res){
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+app.get('img/logo.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/img', 'logo.png'));
 });
 
 
