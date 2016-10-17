@@ -83,7 +83,15 @@ app.get('css/jquery.bxslider.css', function (req, res) {
 app.get('css/nav.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'nav.css'));
 });
-
+app.get('js/jquery-1.11.2.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'jquery-1.11.2.min.js'));
+});
+app.get('js/jquery.bxslider.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'jquery.bxslider.js'));
+});
+app.get('js/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'main.js'));
+});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
