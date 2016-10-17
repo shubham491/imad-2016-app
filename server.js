@@ -131,8 +131,8 @@ app.get('/:daname',function(req,res){
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-app.get('img/logo.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/img', 'logo.png'));
+app.get('/ui/img060.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'img060.jpg'));
 });
 
 app.get('/ui/wood-1099960_1920.jpg', function (req, res) {
