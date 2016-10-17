@@ -87,7 +87,7 @@ app.get('js/jquery-1.11.2.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'jquery-1.11.2.min.js'));
 });
 app.get('js/jquery.bxslider.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'jquery.bxslider.js'));
+  res.sendFile(path.join(__dirname, 'js', 'jquery.bxslider.min.js'));
 });
 app.get('js/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'main.js'));
