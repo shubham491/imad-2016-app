@@ -138,6 +138,9 @@ app.get('/ui/img060.jpg', function (req, res) {
 app.get('/ui/wood-1099960_1920.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'wood-1099960_1920.jpg'));
 });
+app.get('/ui/kitchen-table-top-background-and-redwood-city-apartments-images-thecelebritypix.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'kitchen-table-top-background-and-redwood-city-apartments-images-thecelebritypix.jpg'));
+});
 app.get('/ui/left-arrow-white.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'left-arrow-white.png'));
 });
