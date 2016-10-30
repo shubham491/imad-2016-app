@@ -129,6 +129,7 @@ img{
     background: url("/ui/kitchen-table-top-background-and-redwood-city-apartments-images-thecelebritypix.jpg") repeat fixed;
     background-size:100% 800px;
     text-align:center;
+    position:absolute;
 }
 .parallax-inner{
     padding-top:90px;
