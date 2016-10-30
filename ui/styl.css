@@ -89,7 +89,7 @@ img{
 }
 .slider .bx-wrapper:hover .bx-next{
     background: #000 url("/ui/right-arrow-white.png") no-repeat 8px 13px;
-    right:-4px;
+    right:-10px;
     opacity:0.3;
 }
 .slider .bx-wrapper .bx-next:hover{
