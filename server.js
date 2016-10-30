@@ -150,6 +150,15 @@ app.get('/ui/right-arrow-white.png', function (req, res) {
 app.get('/ui/academics-button.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'academics-button.png'));
 });
+app.get('/ui/employment_icon.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'employment_icon.png'));
+});
+app.get('/ui/icon-personal-preference.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'icon-personal-preference.png'));
+});
+app.get('/ui/training-icon-dkgrn.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'training-icon-dkgrn.png'));
+});
 app.get('/ui/blue-and-green-triangles.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blue-and-green-triangles.jpg'));
 });
