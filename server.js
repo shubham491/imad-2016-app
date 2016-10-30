@@ -147,6 +147,9 @@ app.get('/ui/left-arrow-white.png', function (req, res) {
 app.get('/ui/right-arrow-white.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'right-arrow-white.png'));
 });
+app.get('/ui/academics-button.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'academics-button.png'));
+});
 app.get('/ui/blue-and-green-triangles.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blue-and-green-triangles.jpg'));
 });
