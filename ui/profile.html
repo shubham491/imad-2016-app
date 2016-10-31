@@ -324,9 +324,18 @@ window.addEventListener("scroll", yScroll);
         <header id="headr">
             <script src="C:/Users/SHUBHAM DAS/Desktop/imadnode/imad-2016-app-master/ui/main3.js"></script>
           <ul>
-  <li id="home"><a href="http://shubham491.imad.hasura-app.io/profile">Home</a></li>
-  <li  id="abo"><a href="#about">ABOUT ME</a></li>
-  
+  <li id="home"><a onclick="myfun1()" href="http://shubham491.imad.hasura-app.io/profile">Home</a></li>
+  <li  id="abo"><a onclick="myfun()" href="#about">ABOUT ME</a></li>
+  <script>
+function myfun() {
+    document.getElementById("home").style.backgroundColor="#10bb6a";
+    document.getElementById("abo").style.backgroundColor="#5bc1a9";
+}
+function myfun1() {
+    document.getElementById("abo").style.backgroundColor="#10bb6a";
+    document.getElementById("home").style.backgroundColor="#5bc1a9";
+}
+</script>
 </ul>
 <!--<div class="top">
     <div class="hero">
