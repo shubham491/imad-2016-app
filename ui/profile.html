@@ -444,7 +444,11 @@ function myfun1() {
         </table>
         <script src="ui/readmore.js"></script>
         <script>
-            $('article').readmore();
+            $('article').readmore({
+  speed: 75,
+  lessLink: '<a href="#">Read less</a>'
+  heightMargin: 16
+});
         </script>
         <table>
             <tr>
