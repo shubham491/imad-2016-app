@@ -92,6 +92,9 @@ app.get('/ui/jquery.bxslider.min.js', function (req, res) {
 app.get('/ui/main4.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main4.js'));
 });
+app.get('/ui/main3.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main3.js'));
+});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
