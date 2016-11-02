@@ -435,7 +435,7 @@ function myfun1() {
                     </td>
                 <td style="width:30px;"></td>
                 <td style="width:800px;font-size:18px;"><div id="par1">
-                    <article>Estd. in 1982. The School is affiliated to the Council for the Indian School Certificate</article><a style="text-decoration:none;" id="rm">Read more</a> 
+                    <article>Estd. in 1982. The School is affiliated to the Council for the Indian School Certificate</article><a style="text-decoration:none;cursor:pointer;" id="rm">Read more</a> 
                     </div>
                 </td>
                 
@@ -450,12 +450,13 @@ function myfun1() {
             rm.onclick=function(){
                par1.innerHTML=` <article id="par1">Estd. in 1982. The School is affiliated to the Council for the Indian School Certificate Examinations (CISCE) New Delhi for ICSE ( X th Std.) and ISC ( XII the std) for Science, Arts and Commerce streams. Situated at the heart of Howrah City at Howrah Maidan, a few steps away from proposed Metro Railway Station and within 1 k.m. of walking distance from Howrah Railway Station.I passed my 10th & 12th standard from this school and topped my school with  96% in both the standards.
                     </article>
-                    <a id="sl" style="text-decoration:none;">Show less</a>` ;
+                    <a id="sl" style="text-decoration:none;cursor:pointer;">Show less</a>` ;
                     var sl=document.getElementById("sl");
             sl.onclick=function(){
-                par1.innerHTML=`<article>Estd. in 1982. The School is affiliated to the Council for the Indian School Certificate</article><a style="text-decoration:none;" id="rm">Read more</a>`;
+                par1.innerHTML=`<article>Estd. in 1982. The School is affiliated to the Council for the Indian School Certificate</article><a style="text-decoration:none;cursor:pointer;" id="rm">Read more</a>`;
+                return 0;
             };
-            rm.onclick=funcy2();
+            return 0;
             };
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
