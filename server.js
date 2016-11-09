@@ -84,7 +84,7 @@ app.get('/', function (req, res) {
 app.get('/profile1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index1.html'));
 });
-app.post('/createuser',function(req,res){
+app.post('/create-user',function(req,res){
     var username=req.body.username;
     var password=req.body.password;
     var salt=crypto.randomBytes(128).toString('hex');
