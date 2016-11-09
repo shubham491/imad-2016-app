@@ -85,7 +85,7 @@ app.get('/', function (req, res) {
 app.get('/profile1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index1.html'));
 });
-app.get('/create-user/:username/:password',function(req,res){
+app.get('/create-user/:username & :password',function(req,res){
     var pool=new Pool(config);
     var username=req.params.username;
     var password=req.params.password;
