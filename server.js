@@ -23,22 +23,7 @@ app.get('/hash/:input',function(req,res){
     res.send(hashedString);
 });
 var pool=new Pool(config);
-app.post('/createuser',function(req,res){
-    var username=req.body.username;
-    var password=req.body.password;
-    var salt=crypto.randomBytes(128).toString('hex');
-    var dbString=hash(password,salt);
-    pool.query('INSRT INTO "user" (username,password) VALUES($1,$2)',[username,dbString],function(err,result){
-        if(err)
-        {
-            err.result(500).send(err.toString());
-        }
-        else
-        {
-            res.send("User succesfullyb created "+ username);
-        }
-    });
-});
+
 var da={
 'article-three':{
     title:"My First Product",
@@ -98,6 +83,22 @@ app.get('/', function (req, res) {
 });
 app.get('/profile1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index1.html'));
+});
+app.post('/createuser',function(req,res){
+    var username=req.body.username;
+    var password=req.body.password;
+    var salt=crypto.randomBytes(128).toString('hex');
+    var dbString=hash(password,salt);
+    pool.query('INSRT INTO "user" (username,password) VALUES($1,$2)',[username,dbString],function(err,result){
+        if(err)
+        {
+            err.result(500).send(err.toString());
+        }
+        else
+        {
+            res.send("User succesfullyb created "+ username);
+        }
+    });
 });
 var counter=0;
 app.get('/counter', function (req, res) {
