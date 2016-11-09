@@ -1,9 +1,42 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var Pool=require('pg').Pool;
+var crypto=require('crypto');
 var app = express();
 app.use(morgan('combined'));
+var config={
+    user:'shubham491',
+    database:'shubham491',
+    host:'http://db.imad.hasura-app.io',
+    port:'5432',
+    password:process.env.DB_PASSWORD
+};
+function hash(input,salt){
+    var hashed=crypto.pbkdf2Sync(imput,salt,10000,512,'sha512');
+    return hashed.toString('hex');
+}
+app.get('/hash/:input',function(req,res){
+    var hashedString=hash(req.params.input,'this-is-some-string');
+    res.send(hashedString);
+});
+var pool=new Pool(config);
+app.post('/createuser',function(req,res){
+    var username=req.body.username;
+    var password=req.body.password;
+    var salt=crypto.getRandomBytes(128).toString('hex');
+    var dbString=hash(password,salt);
+    pool.query('INSRT INTO "user" (username,password) VALUES($1,$2)',[username,dbString],function(err,result){
+        if(err)
+        {
+            err.result(500).send(err.toString());
+        }
+        else
+        {
+            res.send("User succesfullyb created "+ username);
+        }
+    });
+});
 var da={
 'article-three':{
     title:"My First Product",
