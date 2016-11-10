@@ -15,6 +15,11 @@ var config={
     port:'5432',
     password:process.env.DB_PASSWORD
 };
+
+app.use(session({
+    secret: 'someRandomSecretValue',
+    cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
+}));
 function hash(input,salt){
     var hashed=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
     return hashed.toString('hex');
