@@ -7,15 +7,15 @@
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  submit.value = 'Sucess!';
+                  submit1.value = 'Sucess!';
               } else if (request.status === 403) {
-                  submit.value = 'Invalid credentials. Try again?';
+                  submit1.value = 'Invalid credentials. Try again?';
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
-                  submit.value = 'Login';
+                  submit1.value = 'Login';
               } else {
                   alert('Something went wrong on the server');
-                  submit.value = 'Login';
+                  submit1.value = 'Login';
               }
               loadLogin();
           }  
