@@ -149,6 +149,9 @@ app.get('/ui/readmore.js', function (req, res) {
 app.get('/article-one',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
+app.get('/signup',function(req,res){
+   res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
+});
 app.get('/profile',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
