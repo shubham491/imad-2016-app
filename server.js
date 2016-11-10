@@ -139,6 +139,9 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/main2.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main2.js'));
 });
+app.get('/ui/signup1.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'signup1.js'));
+});
 app.get('/ui/readmore.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'readmore.js'));
 });
