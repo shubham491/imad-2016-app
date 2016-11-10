@@ -13,7 +13,7 @@ var config={
     database:'shubham491',
     host:'http://db.imad.hasura-app.io',
     port:'5432',
-    password:process.env.DB_PASSWORD
+    password:'db-shubham491-2345'
 };
 
 app.use(session({
