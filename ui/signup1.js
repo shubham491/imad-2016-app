@@ -17,7 +17,7 @@
                   alert('Something went wrong on the server');
                   submit1.value = 'Login';
               }
-              loadLogin();
+             
           }  
           // Not done yet
         };
